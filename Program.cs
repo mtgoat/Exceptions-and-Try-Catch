@@ -52,10 +52,18 @@ namespace Addressbook
             addressBook.AddContact(sue);
             addressBook.AddContact(juan);
 
+        try 
             // Try to addd a contact a second time
-            addressBook.AddContact(sue);
+            {
+                addressBook.AddContact(sue);
 
+            }
 
+            catch 
+
+            {
+                Console.WriteLine("This employee has already been added.");
+            }
             // Create a list of emails that match our Contacts
             List<string> emails = new List<string>() {
             "sue.jones@email.com",
@@ -66,7 +74,7 @@ namespace Addressbook
             // Insert an email that does NOT match a Contact
             emails.Insert(1, "not.in.addressbook@email.com");
 
-
+            
             //  Search the AddressBook by email and print the information about each Contact
             foreach (string email in emails)
             {

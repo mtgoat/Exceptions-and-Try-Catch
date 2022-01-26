@@ -24,7 +24,7 @@ namespace Addressbook
 
             public Contact GetByEmail(string email)
             {
-                return _contactList.email;
+                return _contactList[email];
             }
 
             // this is another way of adding conact to the address book by Micheal T Jordan
