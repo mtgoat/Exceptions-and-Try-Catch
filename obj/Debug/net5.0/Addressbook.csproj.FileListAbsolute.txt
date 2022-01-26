@@ -1,0 +1,16 @@
+C:\Users\johnn\workspace\backend\bangazon\csharp\exercises\Addressbook\obj\Debug\net5.0\Addressbook.csproj.AssemblyReference.cache
+C:\Users\johnn\workspace\backend\bangazon\csharp\exercises\Addressbook\obj\Debug\net5.0\Addressbook.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johnn\workspace\backend\bangazon\csharp\exercises\Addressbook\obj\Debug\net5.0\Addressbook.AssemblyInfoInputs.cache
+C:\Users\johnn\workspace\backend\bangazon\csharp\exercises\Addressbook\obj\Debug\net5.0\Addressbook.AssemblyInfo.cs
+C:\Users\johnn\workspace\backend\bangazon\csharp\exercises\Addressbook\obj\Debug\net5.0\Addressbook.csproj.CoreCompileInputs.cache
+C:\Users\johnn\workspace\backend\bangazon\csharp\exercises\Addressbook\bin\Debug\net5.0\Addressbook.exe
+C:\Users\johnn\workspace\backend\bangazon\csharp\exercises\Addressbook\bin\Debug\net5.0\Addressbook.deps.json
+C:\Users\johnn\workspace\backend\bangazon\csharp\exercises\Addressbook\bin\Debug\net5.0\Addressbook.runtimeconfig.json
+C:\Users\johnn\workspace\backend\bangazon\csharp\exercises\Addressbook\bin\Debug\net5.0\Addressbook.runtimeconfig.dev.json
+C:\Users\johnn\workspace\backend\bangazon\csharp\exercises\Addressbook\bin\Debug\net5.0\Addressbook.dll
+C:\Users\johnn\workspace\backend\bangazon\csharp\exercises\Addressbook\bin\Debug\net5.0\ref\Addressbook.dll
+C:\Users\johnn\workspace\backend\bangazon\csharp\exercises\Addressbook\bin\Debug\net5.0\Addressbook.pdb
+C:\Users\johnn\workspace\backend\bangazon\csharp\exercises\Addressbook\obj\Debug\net5.0\Addressbook.dll
+C:\Users\johnn\workspace\backend\bangazon\csharp\exercises\Addressbook\obj\Debug\net5.0\ref\Addressbook.dll
+C:\Users\johnn\workspace\backend\bangazon\csharp\exercises\Addressbook\obj\Debug\net5.0\Addressbook.pdb
+C:\Users\johnn\workspace\backend\bangazon\csharp\exercises\Addressbook\obj\Debug\net5.0\Addressbook.genruntimeconfig.cache
