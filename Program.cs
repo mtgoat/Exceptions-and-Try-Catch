@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Addressbook
+namespace addressbook
 {
     class Program
     {
@@ -52,18 +52,18 @@ namespace Addressbook
             addressBook.AddContact(sue);
             addressBook.AddContact(juan);
 
-        try 
-            // Try to addd a contact a second time
-            {
-                addressBook.AddContact(sue);
+        // try 
+        //     // Try to addd a contact a second time
+        //     {
+            addressBook.AddContact(sue);
 
-            }
+        //     }
 
-            catch 
+        //     catch 
 
-            {
-                Console.WriteLine("This employee has already been added.");
-            }
+        //     {
+        //         Console.WriteLine("This employee has already been added.");
+        //     }
             // Create a list of emails that match our Contacts
             List<string> emails = new List<string>() {
             "sue.jones@email.com",
@@ -71,19 +71,30 @@ namespace Addressbook
             "bob.smith@email.com",
         };
 
+        
             // Insert an email that does NOT match a Contact
             emails.Insert(1, "not.in.addressbook@email.com");
 
             
-            //  Search the AddressBook by email and print the information about each Contact
+            //  Search the Ad0dressBook by email and print the information about each Contact
             foreach (string email in emails)
             {
+                
+                try 
+                {
                 Contact contact = addressBook.GetByEmail(email);
                 Console.WriteLine("----------------------------");
                 Console.WriteLine($"Name: {contact.FullName}");
                 Console.WriteLine($"Email: {contact.Email}");
                 Console.WriteLine($"Address: {contact.Address}");
-
+                Console.WriteLine();
+                }
+                catch
+                {
+                Console.WriteLine("----------------------------");
+                Console.WriteLine($"{email} was not found in the addressbook.\n ");
+                //\n = new line
+                }
             }
             //   Dictionary<string,string> words = new Dictionary<string, string>();
             //     words.Add("Name", "Encylopedia" );

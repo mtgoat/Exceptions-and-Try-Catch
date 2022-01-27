@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Addressbook
+namespace addressbook
 {
     
         public class AddressBook
@@ -12,8 +12,14 @@ namespace Addressbook
             //this is a method or function that runs when a information is added to the addressbook class and this method adds an e-mail as a value and personObject as a value and this is one way of doing it.
             public void AddContact(Contact personObjContact )
             {
-                // Emailaddress = personObjContact;
+                try{
                 _contactList.Add(personObjContact.Email, personObjContact);
+                }
+                catch{
+                    Console.WriteLine($"{personObjContact.FirstName} has already beed added to the address book.");
+                    Console.WriteLine();
+                    Console.WriteLine();
+                }
             }
             // this is another way of adding conact to the address book by Micheal T Jordan
 
@@ -22,9 +28,10 @@ namespace Addressbook
                 _contactList[person.Email] = person;
             } */
 
+
             public Contact GetByEmail(string email)
             {
-                return _contactList[email];
+                    return _contactList[email];
             }
 
             // this is another way of adding conact to the address book by Micheal T Jordan
