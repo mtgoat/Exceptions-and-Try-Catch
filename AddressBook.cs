@@ -37,6 +37,7 @@ namespace addressbook
             }
 
             // this is another way of adding conact to the address book by Micheal T Jordan
+            //public contact because the method spits out contact
 
             /* public Contact GetByEmail(string email)
             {
