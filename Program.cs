@@ -52,18 +52,11 @@ namespace addressbook
             addressBook.AddContact(sue);
             addressBook.AddContact(juan);
 
-        // try 
-        //     // Try to addd a contact a second time
-        //     {
+        // this gaves an error - Unhandled exception. System.ArgumentException: An item with the same key has already been added. Key: sue.jones@email.com 
+        // so we add try and catch at the AddContact method at adressBook class
             addressBook.AddContact(sue);
 
-        //     }
-
-        //     catch 
-
-        //     {
-        //         Console.WriteLine("This employee has already been added.");
-        //     }
+        // 
             // Create a list of emails that match our Contacts
             List<string> emails = new List<string>() {
             "sue.jones@email.com",
@@ -73,6 +66,14 @@ namespace addressbook
 
         
             // Insert an email that does NOT match a Contact
+            //this gave error message 
+            /*Unhandled exception. System.Collections.Generic.KeyNotFoundException: The given key 'not.in.addressbook@email.com' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at addressbook.AddressBook.GetByEmail(String email) in C:\Users\johnn\workspace\backend\bangazon\csharp\exercises\Addressbook\AddressBook.cs:line 34
+   at addressbook.Program.Main(String[] args) in C:\Users\johnn\workspace\backend\bangazon\csharp\exercises\Addressbook\Program.cs:line 85 */ 
+   //so we add try and catch at line 91 and 100
+
+
             emails.Insert(1, "not.in.addressbook@email.com");
 
             
@@ -89,13 +90,15 @@ namespace addressbook
                 Console.WriteLine($"Address: {contact.Address}");
                 Console.WriteLine();
                 }
-                catch
+                catch (KeyNotFoundException ex)
                 {
                 Console.WriteLine("----------------------------");
                 Console.WriteLine($"{email} was not found in the addressbook.\n ");
                 //\n = new line
                 }
             }
+
+
             //   Dictionary<string,string> words = new Dictionary<string, string>();
             //     words.Add("Name", "Encylopedia" );
             //     words.Add("Age", "400" );

@@ -12,10 +12,12 @@ namespace addressbook
             //this is a method or function that runs when a information is added to the addressbook class and this method adds an e-mail as a value and personObject as a value and this is one way of doing it.
             public void AddContact(Contact personObjContact )
             {
-                try{
+                try
+                {
                 _contactList.Add(personObjContact.Email, personObjContact);
                 }
-                catch{
+                catch(ArgumentException ex)
+                {
                     Console.WriteLine($"{personObjContact.FirstName} has already beed added to the address book.");
                     Console.WriteLine();
                     Console.WriteLine();
